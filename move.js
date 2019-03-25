@@ -5,6 +5,11 @@ const images = [
     '/pelmen/arest.png'
 ];
 document.getElementById("zvizda").addEventListener('dblclick', dblclick);
+var stol = document.querySelector('.stol')
+var csC = window.getComputedStyle(stol)
+var widthC = parseInt(csC.width)
+
+
 
 let currentId = 0;
 function dblclick() {
