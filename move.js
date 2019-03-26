@@ -20,7 +20,7 @@ function dblclick() {
     function leftArrowPressed() {
     var element = document.getElementById("zvizda");
     var currentX = parseInt(element.style, 10);
-    element.style.left  `${currentX - 30 < 0 ? currentX : currentX - 30}px`;
+    element.style.left = `${currentX - 30 < 0 ? currentX : currentX - 30}px`;
     }
 
     function rightArrowPressed() {
