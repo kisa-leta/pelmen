@@ -18,9 +18,9 @@ function dblclick() {
 }
 
     function leftArrowPressed() {
-    var element = document.getElementById("zvizda");
-    var currentX = parseInt(element.style, 10);
-    element.style.left = `${currentX - 230 < 0 ? currentX : currentX - 30}px`;
+        var element = document.getElementById("zvizda");
+        var currentX = parseInt(element.style.left, 10);
+        element.style.left = `${currentX - 30 < maxWidth ? currentX : currentX - 30}px`;
     }
 
     function rightArrowPressed() {
@@ -32,7 +32,7 @@ function dblclick() {
     function upArrowPressed() {
         var element = document.getElementById("zvizda");
         var currentY = parseInt(element.style.top, 10);
-        element.style.top = `${currentY - 230 < minHeight ? currentY : currentY - 30}px`;
+        element.style.top = `${currentY - 30 < minHeight ? currentY : currentY - 30}px`;
     }
     
     function downArrowPressed() {
