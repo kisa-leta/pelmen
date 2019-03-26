@@ -7,7 +7,7 @@ const images = [
 
 var currentId = 0;
 document.getElementById('zvizda').addEventListener('dblclick', dblclick);
-var maxWidth = document.getElementById('zvizda').clientWidth;
+var maxWidth = document.getElementById('stol').clientWidth;
 var maxHeight = maxWidth / 1.33;
 var minHeight = maxWidth / 1.89
 
