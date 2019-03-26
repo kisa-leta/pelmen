@@ -5,9 +5,8 @@ const images = [
     '/pelmen/arest.png'
 ];
 
+var currentId = 0;
 
-
-let currentId = 0;
 function dblclick() {
     currentId = currentId >= 3 ? 0 : currentId + 1;
     var element = document.getElementById("zvizda");
