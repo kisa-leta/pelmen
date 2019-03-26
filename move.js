@@ -32,7 +32,7 @@ function dblclick() {
     function upArrowPressed() {
         var element = document.getElementById("zvizda");
         var currentY = parseInt(element.style.top, 10);
-        element.style.top = `${currentY + 160 < minHeight ? currentY : currentY - 30}px`;
+        element.style.top = `${currentY + 130 < minHeight ? currentY : currentY - 30}px`;
     }
     
     function downArrowPressed() {
