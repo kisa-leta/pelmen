@@ -6,6 +6,7 @@ const images = [
 ];
 
 var currentId = 0;
+document.getElementById('zvizda').addEventListener('dblclick', dblclick);
 
 function dblclick() {
     currentId = currentId >= 3 ? 0 : currentId + 1;
