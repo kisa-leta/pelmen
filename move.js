@@ -32,13 +32,13 @@ function dblclick() {
     function upArrowPressed() {
         var element = document.getElementById("zvizda");
         var currentY = parseInt(element.style.top, 10);
-        element.style.left = `${currentY - 30 < minHeight ? currentY : currentY - 30}px`;
+        element.style.top = `${currentY - 30 < minHeight ? currentY : currentY - 30}px`;
     }
     
     function downArrowPressed() {
         var element = document.getElementById("zvizda");
         var currentY = parseInt(element.style.top, 10);
-        element.style.left = `${currentY + 30 > maxHeight ? currentY : currentY + 30}px`;
+        element.style.top = `${currentY + 30 > maxHeight ? currentY : currentY + 30}px`;
     }
 
     function moveSelection(evt) {
